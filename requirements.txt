@@ -1,2 +1,2 @@
-git+https://github.com/democritus-project/democritus-hypothesis.git#egg=democritus-hypothesis
+democritus-hypothesis @ git+https://github.com/democritus-project/democritus-hypothesis.git#egg=democritus-hypothesis
 hypothesis
