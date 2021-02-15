@@ -1,8 +1,8 @@
 # Democritus Uuids
 
 [![PyPI](https://img.shields.io/pypi/v/democritus-uuids.svg)](https://pypi.python.org/pypi/democritus-uuids)
-[![Build Status](https://travis-ci.com/democritus-project/democritus-uuids.svg?branch=master)](https://travis-ci.com/democritus-project/democritus-uuids)
-[![codecov](https://codecov.io/gh/democritus-project/democritus-uuids/branch/master/graph/badge.svg?token=V0WOIXRGMM)](https://codecov.io/gh/democritus-project/democritus-uuids)
+[![Build Status](https://travis-ci.com/democritus-project/democritus-uuids.svg?branch=main)](https://travis-ci.com/democritus-project/democritus-uuids)
+[![codecov](https://codecov.io/gh/democritus-project/democritus-uuids/branch/main/graph/badge.svg?token=V0WOIXRGMM)](https://codecov.io/gh/democritus-project/democritus-uuids)
 
 Democritus functions<sup>[1]</sup> for working with uuids.
 
