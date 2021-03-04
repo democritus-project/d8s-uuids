@@ -1,12 +1,11 @@
 import uuid
-from typing import List, Union, Optional
+from typing import List, Optional, Union
 
 
 def uuid4_examples(n: int = 10, *, uuids_as_strings: bool = True) -> Union[List[str], List[uuid.UUID]]:
     """Create n uuids."""
-    from hypothesis.strategies import uuids
-
     from democritus_hypothesis import hypothesis_get_strategy_results
+    from hypothesis.strategies import uuids
 
     uuid_objects = hypothesis_get_strategy_results(uuids, n=n)
     if uuids_as_strings:
@@ -39,11 +38,10 @@ def uuid5(name: str, *, namespace: Optional[uuid.UUID] = None) -> str:
 def is_uuid(possible_uuid: Union[str, uuid.UUID], *, version: Optional[int] = None) -> bool:
     """Return whether or not the possible_uuid is a uuid."""
     try:
-        new_uuid = uuid.UUID(possible_uuid)
-    except ValueError as e:
+        new_uuid = uuid.UUID(str(possible_uuid))
+    except ValueError:
         return False
     else:
-        if version is not None:
-            if new_uuid.version != version:
-                return False
+        if version and new_uuid.version != version:
+            return False
         return True
