@@ -1,12 +1,6 @@
 import uuid
 
-from democritus_uuids import (
-    uuid4_examples,
-    uuid4,
-    uuid3,
-    uuid5,
-    is_uuid,
-)
+from democritus_uuids import is_uuid, uuid3, uuid4, uuid4_examples, uuid5
 
 
 def test_is_uuid_docs_1():
