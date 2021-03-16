@@ -4,7 +4,7 @@ from typing import List, Optional, Union
 
 def uuid4_examples(n: int = 10, *, uuids_as_strings: bool = True) -> Union[List[str], List[uuid.UUID]]:
     """Create n uuids."""
-    from democritus_hypothesis import hypothesis_get_strategy_results
+    from d8s_hypothesis import hypothesis_get_strategy_results
     from hypothesis.strategies import uuids
 
     uuid_objects = hypothesis_get_strategy_results(uuids, n=n)
