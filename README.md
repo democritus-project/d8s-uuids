@@ -14,9 +14,28 @@ Democritus functions<sup>[1]</sup> for working with uuids.
 
 We use `d8s` as an abbreviation for `democritus` (you can read more about this [here](https://github.com/democritus-project/roadmap#what-is-d8s)).
 
-## Usage
+## Functions
 
-Coming soon...
+  - ```python
+    def uuid4_examples(n: int = 10, *, uuids_as_strings: bool = True) -> Union[List[str], List[uuid.UUID]]:
+        """Create n uuids."""
+    ```
+  - ```python
+    def uuid4() -> str:
+        """Create a random UUID."""
+    ```
+  - ```python
+    def uuid3(name: str, *, namespace: Optional[uuid.UUID] = None) -> str:
+        """Create a random uuid based on the given name."""
+    ```
+  - ```python
+    def uuid5(name: str, *, namespace: Optional[uuid.UUID] = None) -> str:
+        """Create a random uuid based on the given name."""
+    ```
+  - ```python
+    def is_uuid(possible_uuid: Union[str, uuid.UUID], *, version: Optional[int] = None) -> bool:
+        """Return whether or not the possible_uuid is a uuid."""
+    ```
 
 ## Development
 
