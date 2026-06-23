@@ -1,3 +1,0 @@
-d8s-hypothesis==0.*
-hypothesis
-importlib-metadata; python_version < '3.8'
